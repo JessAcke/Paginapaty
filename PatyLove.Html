@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yo soy Paty</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    
+    :root {
+      --green: #6a7154;
+      --beige: #f4f1ec;
+      --tan: #cbbba0;
+      --light: #ffffff;
+      --font-title: 'Playfair Display', serif;
+      --font-body: 'Open Sans', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--beige);
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    nav {
+      background-color: var(--green);
+      color: var(--light);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
+
+    nav .logo {
+      font-family: var(--font-title);
+      font-size: 24px;
+    }
+
+    nav .icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 40px;
+      background-color: var(--light);
+    }
+
+    .hero img {
+      max-width: 100%;
+      width: 400px;
+      flex: 1;
+      border-radius: 10px;
+    }
+
+    .hero-text {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-text h1 {
+      font-family: var(--font-title);
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: var(--green);
+    }
+
+    .hero-text p {
+      margin-bottom: 20px;
+    }
+
+    .hero-text a {
+      text-decoration: none;
+      color: var(--green);
+      font-weight: bold;
+    }
+
+    .spotlight {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .spotlight h2 {
+      font-family: var(--font-title);
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: var(--green);
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .product {
+      background-color: var(--light);
+      padding: 20px;
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .product h3 {
+      font-family: var(--font-title);
+      font-size: 18px;
+      margin-bottom: 5px;
+      color: var(--green);
+    }
+
+    .eco {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px;
+      background-color: var(--tan);
+      align-items: center;
+    }
+
+    .eco-text {
+      flex: 1;
+      color: #333;
+      padding: 20px;
+    }
+
+    .eco-text h2 {
+      font-family: var(--font-title);
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .eco-img {
+      flex: 1;
+    }
+
+    .eco-img img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .instagram {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .instagram h2 {
+      font-family: var(--font-title);
+      font-size: 26px;
+      margin-bottom: 30px;
+      color: var(--green);
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 180px;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .hero, .eco {
+        flex-direction: column;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .product {
+        width: 90%;
+      }
+
+      .gallery img {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+
+    /* FLORES 🌸🌼🌻 */
+    .flower {
+      position: fixed;
+      top: -50px;
+      font-size: 32px;
+      pointer-events: none;
+      animation: fall 7s linear infinite;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Yo soy miss Patylu</div>
+    <div class="icons">🌸</div>
+  </nav>
+
+  <section class="hero">
+    <img src="fotos1/Imagen de WhatsApp 2025-06-13 a las 14.24.34_4eef295a.jpg" alt="Decoración amorosa"/>
+    <div class="hero-text">
+      <h1>Holi yo soy Paty y te dare razones por las cuales merezco flores 🌸</h1>
+      <p>Tengo 23 años soy maestra de kinder y como podras ver en la foto de la izquierda tengo la sonrisa mas linda del mundo</p>
+      <a href="#">Sigue leyendo abajo si tanto te intero 🌸</a>
+    </div>
+  </section>
+
+  <section class="spotlight">
+    <h2>¿Merezco flores?</h2>
+    <p>El autor de mi página web dejó tres razones por las cuales sí merezco flores cualquier día del año no importa si no es un día especial</p>
+    <div class="products">
+      <div class="product">
+        <img src="fotos1/Imagen de WhatsApp 2025-06-13 a las 15.11.24_e37e45cf.jpg" alt="Recuerdo 1">
+        <h3>Su sonrisa</h3>
+        <p>Miss Paty tiene una sonrisa increíblemente hermosa</p>
+      </div>
+     <div class="product">
+        <img src="fotos1/Imagen de WhatsApp 2025-06-13 a las 15.11.23_67aa9f90.jpg" alt="Recuerdo 4">
+        <h3>Su increíblemente espectacular belleza</h3>
+        <p>Porque su belleza es razón suficiente, no necesita explicación, solo admiración</p>
+    </div>
+    <div class="product">
+        <img src="fotos1/1.jpg" alt="Recuerdo 5">
+        <h3>Su profesión</h3>
+        <p>Porque ser maestra de kinder y enseñar con paciencia y amor es una forma de belleza de la gran persona que es</p>
+    </div>
+  </section>
+
+<section class="eco">
+  <div class="eco-text">
+    <h2>¿Por qué merece flores?</h2>
+    <p>Aunque apenas la estoy conociendo, sé que Paty esconde un mundo increíble dentro de ella. Hay algo en su forma de hablar, de reír y que simplemente se siente especial ella tiene una belleza que te atrapa como si te echizara desde que la ves. No le des flores por compromiso o por cumplir... si no lo vas a hacer con ganas, mejor no lo hagas. Pero si en tan poco tiempo alguien te hace pensar en sonrisas y en admiración... entonces sí,  porque Paty no solo merece flores, merece un campo entero lleno de ellas. 🌸</p>
+  </div>
+  <div class="eco-img">
+    <img src="fotos1/flores.jpg" alt="Campo de flores para Paty">
+  </div>
+</section>
+
+<!-- ANIMACIÓN DE FLORES -->
+<script>
+  const emojis = ["🌻", "🌸", "🌼"];
+
+  function crearFlor() {
+    const flor = document.createElement("div");
+    flor.classList.add("flower");
+    flor.style.left = Math.random() * window.innerWidth + "px";
+    flor.style.fontSize = (Math.random() * 20 + 30) + "px";
+    flor.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+    document.body.appendChild(flor);
+
+    setTimeout(() => {
+      flor.remove();
+    }, 7000);
+  }
+
+  setInterval(crearFlor, 500);
+</script>
+
+</body>
+</html>
